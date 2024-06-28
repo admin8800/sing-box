@@ -1401,12 +1401,12 @@ url_qr() {
             msg "\n------------- $is_config_name & QR code 二维码 -------------"
             msg
             if [[ $(type -P qrencode) ]]; then
-                qrencode -t ANSI -s 3 "${is_url}"
+                qrencode -t ANSI -s 2 "${is_url}"
             else
                 msg "请安装 qrencode: $(_green "$cmd update -y; $cmd install qrencode -y")"
             fi
             msg
-            msg "如果无法正常显示或识别, 请使用下面的链接来生成二维码:"
+            msg "如果无法正常显示或识别, 自行搜索使用二维码在线生成"
             msg "\n\e[4;${is_color}m${link}\e[0m\n"
             footer_msg
         }
