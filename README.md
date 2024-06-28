@@ -6,6 +6,8 @@
 ```
 bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 ```
+#### 输入`sing-box`可打开管理菜单
+
 
 # 特点
 
