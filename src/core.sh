@@ -1401,7 +1401,7 @@ url_qr() {
             msg "\n------------- $is_config_name & QR code 二维码 -------------"
             msg
             if [[ $(type -P qrencode) ]]; then
-                qrencode -t ANSI "${is_url}"
+                qrencode -t ANSI -s 3 "${is_url}"
             else
                 msg "请安装 qrencode: $(_green "$cmd update -y; $cmd install qrencode -y")"
             fi
