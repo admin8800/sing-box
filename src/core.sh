@@ -57,7 +57,7 @@ info_list=(
     "应用层协议协商 (Alpn)"
     "密码 (password)"
     "加密方式 (encryption)"
-    "链接 (URL)"
+    "节点链接 (URL)"
     "目标地址 (remote addr)"
     "目标端口 (remote port)"
     "流控 (flow)"
