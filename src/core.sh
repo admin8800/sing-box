@@ -1364,7 +1364,7 @@ info() {
         msg "$a $tt= \e[${is_color}m${is_info_str[$i]}\e[0m"
     done
     if [[ $is_new_install ]]; then
-        warn "首次安装请寻求帮助"
+        warn "首次安装请寻求帮助。提示：输入 sing-box 打开管理菜单"
     fi
     if [[ $is_url ]]; then
         msg "------------- ${info_list[12]} -------------"
