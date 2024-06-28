@@ -1,0 +1,40 @@
+name: Main
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: get ver
+        id: get_ver
+        run: |
+          is_sh_ver=$(cat *.sh | grep is_sh_ver= | cut -d'=' -f2)
+          echo "is_sh_ver=${is_sh_ver}" >> $GITHUB_ENV
+          old=$(git tag | tail -n1)
+          echo "old=${old}" >> $GITHUB_ENV
+        env:
+          is_sh_ver: ${{ env.is_sh_ver }}
+          old: ${{ env.old }}
+      # - name: test
+      #   if: env.is_sh_ver == env.old 
+      #   run: |
+      #     echo not found new version.
+      #     exit 1
+      - name: tar
+        run: tar zcvf code.tar.gz ./*
+      - name: release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: code.tar.gz
+          tag_name: ${{ env.is_sh_ver }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIYHUB_TOKEN }}
