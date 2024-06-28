@@ -17,7 +17,7 @@ _cyan() { echo -e ${cyan}$@${none}; }
 _green() { echo -e ${green}$@${none}; }
 _yellow() { echo -e ${yellow}$@${none}; }
 _magenta() { echo -e ${magenta}$@${none}; }
-_red_bg() { echo -e "\e[41m$@${none}"; }
+_red_bg() { echo -e "\e[42m$@${none}"; }
 
 is_err=$(_red_bg 错误!)
 is_warn=$(_red_bg 警告!)
@@ -298,7 +298,7 @@ main() {
 
     # check old version
     [[ -f $is_sh_bin && -d $is_core_dir/bin && -d $is_sh_dir && -d $is_conf_dir ]] && {
-        err "检测到脚本已安装, 如需重装请使用${green} ${is_core} reinstall ${none}命令."
+        err "检测到脚本已安装， 请使用 sing-box 命令打开管理菜单，如需重装请使用${green} ${is_core} reinstall ${none}命令."
     }
 
     # check parameters
