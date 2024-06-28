@@ -1528,8 +1528,7 @@ is_main_menu() {
         esac
         ;;
     10)
-        load help.sh
-        about
+        echo "没什么好看的啦"
         ;;
     esac
 }
