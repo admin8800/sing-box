@@ -3,7 +3,7 @@
 author=admin8800
 
 # bash fonts colors
-red='\e[31m'
+red='\e[32m'
 yellow='\e[33m'
 gray='\e[90m'
 green='\e[92m'
