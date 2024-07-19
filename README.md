@@ -43,7 +43,7 @@ bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 host="example.com"
 is_host_dns="127.123.123.213"
 ```
-
+更多帮助
 ```
 
 基本:
@@ -105,4 +105,4 @@ is_host_dns="127.123.123.213"
 
 ---
 
-基于[233boy大佬](https://233boy.com/sing-box/sing-box-script/)的修改版，优化细节和去除了广告，请大家尽量用233boy的原版
+基于[233boy大佬](https://233boy.com/sing-box/sing-box-script/)的修改版，优化细节和去除了广告。
