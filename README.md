@@ -35,6 +35,7 @@ bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 
 
 # 帮助
+如果出现获取本机IP失败，可以手动赋值，例如： `ip="123.123.123.213"`
 ```
 
 基本:
