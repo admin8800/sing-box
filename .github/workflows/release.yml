@@ -1,7 +1,12 @@
-name: Main
+name: 构建发布
 
 on:
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: '输入标签'
+        required: true
+        default: 'v1.0.0'
 
 permissions:
   contents: write
