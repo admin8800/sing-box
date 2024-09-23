@@ -1,15 +1,15 @@
-# 介绍
+## 介绍
 
 最好用的 sing-box 一键安装脚本 & 管理脚本
 
-# 一键运行
+## 一键运行
 ```
 bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 ```
-## 输入`sing-box`可打开管理菜单
+### 输入`sing-box`可打开管理菜单
 
 
-# 特点
+## 特点
 
 - 快速安装
 - 无敌好用
@@ -34,16 +34,19 @@ bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 - 还有更多...
 
 
-# 帮助
+## 帮助
+**节点配置文件路径`/etc/sing-box/conf/`**
 
-#### 如果出现获取本机IP失败，可以手动赋值，例如： `ip="123.123.123.213"`
+**如果出现获取本机IP失败，可以手动赋值，例如： `ip="123.123.123.213"`**
 
-#### 手动赋值域名和域名解析的 IP 地址
+**手动赋值域名和域名解析的 IP 地址**
 ```
 host="example.com"
 is_host_dns="127.123.123.213"
 ```
-更多帮助
+
+- 更多帮助
+
 ```
 
 基本:
@@ -105,4 +108,4 @@ is_host_dns="127.123.123.213"
 
 ---
 
-基于[233boy大佬](https://233boy.com/sing-box/sing-box-script/)的修改版，优化细节和去除了广告。
+> 基于[233boy大佬](https://233boy.com/sing-box/sing-box-script/)的修改版，优化细节和去除了广告。
