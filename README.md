@@ -12,10 +12,7 @@ bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 ## 特点
 
 - 快速安装
-- 无敌好用
-- 零学习成本
 - 自动化 TLS
-- 简化所有流程
 - 兼容 sing-box 命令
 - 强大的快捷参数
 - 支持所有常用协议
@@ -31,7 +28,6 @@ bash <(wget -qO- -o- https://github.com/admin8800/sing-box/raw/main/install.sh)
 - 一键启用 BBR
 - 一键更改伪装网站
 - 一键更改 (端口/UUID/密码/域名/路径/加密方式/SNI/等...)
-- 还有更多...
 
 
 ## 帮助
